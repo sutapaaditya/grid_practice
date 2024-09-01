@@ -85,3 +85,30 @@ body{
   cursor: pointer;
   transition: 0.4s;
 }
+.loading{
+  height: 300px;
+  width: 300px;
+  border-radius: 90%;
+  border: 15px solid pink;
+  border-right-color: black;
+  animation: spin 1s ease infinite;
+  margin: 20px auto;
+}
+.load{
+  height: 150px;
+  position: fixed;
+  width: 150px;
+  border-radius: 50%;
+  border: 20px solid skyblue;
+  border-left-color: brown;
+  animation: spin 5s ease infinite;
+  margin: 10px auto;
+}
+@keyframes spin{
+50%{
+  transform: rotate(180deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+}
